@@ -684,13 +684,14 @@
           body: formData,
           headers: { 'Accept': 'application/json' }
         });
-        if(res.ok){
+        let data;
+        try{ data = await res.json(); }catch(e){}
+        // FormSubmit répond 200 même en cas d'échec : il faut vérifier data.success
+        if(res.ok && data && String(data.success) === 'true'){
           statusEl.textContent = 'Message envoyé !';
           statusEl.style.color = 'var(--teal)';
           contactForm.reset();
         } else {
-          let data;
-          try{ data = await res.json(); }catch(e){}
           statusEl.textContent = (data && data.message) ? data.message : 'Une erreur est survenue.';
           statusEl.style.color = 'red';
         }
