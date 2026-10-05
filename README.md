@@ -1,6 +1,6 @@
 # Portfolio — Fidélia SOWAKOUDE
 
-Portfolio personnel de **Fidélia SOWAKOUDE**, Data Engineer junior à la recherche d'une **alternance en Data Engineering / Data & IA**.
+Portfolio personnel de **Fidélia SOWAKOUDE**, Data Engineer junior à la recherche d'une **alternance ou d'un CDI en Data Engineering / Data & IA**.
 
 🔗 **Voir le site :** [fidelia-x.github.io/Portfolio_fidelia](https://fidelia-x.github.io/Portfolio_fidelia/)
 
@@ -20,7 +20,6 @@ Portfolio personnel de **Fidélia SOWAKOUDE**, Data Engineer junior à la recher
 - **JavaScript (vanilla)** : animations au défilement, barre de progression, sections projets dépliables, envoi du formulaire
 - **[FormSubmit](https://formsubmit.co/)** : envoi des messages du formulaire par email, sans backend
 - **GitHub Pages** : hébergement
-- Polices : Space Grotesk, Inter et IBM Plex Mono (Google Fonts)
 
 ## Structure
 
