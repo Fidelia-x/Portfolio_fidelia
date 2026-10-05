@@ -31,7 +31,6 @@
     -webkit-font-smoothing:antialiased;
   }
   h1,h2,h3{font-family:'Space Grotesk', sans-serif; font-weight:600; letter-spacing:-0.01em;}
-  .mono{font-family:'IBM Plex Mono', monospace;}
   a{color:inherit; text-decoration:none;}
   img{max-width:100%; display:block;}
   .wrap{max-width:1120px; margin:0 auto; padding:0 32px;}
@@ -64,21 +63,9 @@
   /* HERO */
   .hero{padding-top:170px; padding-bottom:70px;}
   .hero-grid{display:grid; grid-template-columns:1.15fr 0.85fr; gap:60px; align-items:center;}
-  .eyebrow{
-    display:inline-flex; align-items:center; gap:8px;
-    font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--teal);
-    background:var(--teal-soft); border:1px solid rgba(46,107,99,0.25);
-    padding:6px 13px; border-radius:20px; margin-bottom:22px;
-  }
-  .eyebrow .dot{width:6px; height:6px; border-radius:50%; background:var(--teal);}
   .hero h1{font-size:clamp(34px,4.8vw,50px); line-height:1.08;}
   .hero h1 em{font-style:normal; color:var(--teal);}
   .hero p.lede{margin-top:20px; color:var(--muted); font-size:16.5px; max-width:520px;}
-  .hero-meta{margin-top:26px; display:flex; flex-wrap:wrap; gap:10px;}
-  .chip{
-    font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--muted);
-    border:1px solid var(--line); padding:6px 12px; border-radius:20px; background:var(--surface);
-  }
   .cta-row{margin-top:34px; display:flex; gap:14px; flex-wrap:wrap;}
   .hero-divider{width:70px; height:1px; margin:24px 0; border:none; background:var(--line);}
   .btn{
@@ -99,12 +86,6 @@
     background:var(--surface); border:1px solid var(--line);
   }
   .hero-photo img{width:100%; height:100%; object-fit:cover;}
-  .hero-photo .tag-float{
-    position:absolute; bottom:-16px; left:-16px; background:var(--bg); border:1px solid var(--line);
-    border-radius:14px; padding:14px 18px; box-shadow:0 8px 24px rgba(42,37,32,0.08);
-  }
-  .tag-float .n{font-family:'Space Grotesk',sans-serif; font-size:22px; font-weight:700; color:var(--teal);}
-  .tag-float .l{font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:var(--muted);}
   @media (max-width:820px){
     .hero-grid{grid-template-columns:1fr;}
     .hero-photo{max-width:320px; margin:0 auto;}
@@ -118,11 +99,10 @@
 
   /* ABOUT */
   .about-grid{display:grid; grid-template-columns:0.85fr 1.15fr; gap:56px; align-items:center; margin-bottom:80px;}
-  .about-photo{border-radius:20px; overflow:hidden; border:1px solid var(--line);}
   .about-text h3{font-size:19px; margin-bottom:12px;}
   .about-text p{color:var(--muted); margin-bottom:14px; font-size:15.5px;}
   .about-text b{color:var(--ink);}
-  @media (max-width:820px){.about-grid{grid-template-columns:1fr;} .about-photo{max-width:260px; margin:0 auto;}}
+  @media (max-width:820px){.about-grid{grid-template-columns:1fr;}}
 
   /* TIMELINE (parcours unifié) */
   .timeline{position:relative; max-width:820px; margin:0 auto;}
@@ -159,19 +139,6 @@
 
   /* PROJECTS */
   .proj-list{display:flex; flex-direction:column; gap:20px;}
-  .proj-card{
-    background:var(--surface); border:1px solid var(--line); border-radius:18px; padding:32px;
-    display:grid; grid-template-columns:1fr 1fr; gap:32px;
-  }
-  .proj-head{grid-column:1/-1; display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:8px; margin-bottom:6px;}
-  .proj-head h3{font-size:19px;}
-  .proj-meta{font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:var(--muted);}
-  .proj-col h5{font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--teal); text-transform:uppercase; letter-spacing:0.04em; margin-bottom:9px;}
-  .proj-col ul{padding-left:15px; font-size:13.8px; color:var(--muted);}
-  .proj-col li{margin-bottom:6px;}
-  .proj-stack{grid-column:1/-1; display:flex; flex-wrap:wrap; gap:6px; margin-top:6px;}
-  .proj-stack span{font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:var(--amber); background:var(--amber-soft); padding:3px 9px; border-radius:10px;}
-  @media (max-width:700px){.proj-card{grid-template-columns:1fr;}}
 
   /* CONTACT */
   .contact-grid{display:grid; grid-template-columns:0.9fr 1.1fr; gap:40px; align-items:start;}
@@ -230,11 +197,6 @@
   .about-avatar-col{display:flex; flex-direction:column; align-items:center; gap:20px;}
   .about-avatar{width:180px; height:180px; border-radius:50%; overflow:hidden; border:4px solid var(--bg); box-shadow:0 0 0 1px var(--line), 0 12px 30px rgba(42,37,32,0.1);}
   .about-avatar img{width:100%; height:100%; object-fit:cover;}
-  .about-facts{width:100%; background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:18px 20px;}
-  .about-facts .kv{display:flex; justify-content:space-between; font-size:13px; padding:7px 0; border-bottom:1px dashed var(--line);}
-  .about-facts .kv:last-child{border-bottom:none;}
-  .about-facts .kv span:first-child{color:var(--muted);}
-  .about-facts .kv span:last-child{font-family:'IBM Plex Mono',monospace; font-size:12px;}
   @media (max-width:820px){.about-avatar{width:150px; height:150px;}}
 
   /* CV card */
@@ -257,13 +219,11 @@
   .proj-short{color:var(--muted); font-size:14.5px; margin-bottom:14px;}
   .proj-details{display:none; padding-top:10px; border-top:1px solid var(--line); margin-top:6px;}
   .proj-details.open{display:block;}
-  .proj-details .cols2{display:grid; grid-template-columns:1fr 1fr; gap:26px;}
   .proj-details h5{font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--teal); text-transform:uppercase; letter-spacing:0.04em; margin-bottom:9px;}
   .proj-details ul{padding-left:15px; font-size:13.8px; color:var(--muted);}
   .proj-details li{margin-bottom:6px;}
   .proj-details .proj-stack{display:flex; flex-wrap:wrap; gap:6px; margin-top:16px;}
   .proj-details .proj-stack span{font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:var(--amber); background:var(--amber-soft); padding:3px 9px; border-radius:10px;}
-  @media (max-width:700px){.proj-details .cols2{grid-template-columns:1fr;}}
   .toggle-btn{
     margin-top:6px; font-family:'IBM Plex Mono',monospace; font-size:12.5px; color:var(--teal);
     background:none; border:none; cursor:pointer; display:inline-flex; align-items:center; gap:6px; padding:0;
@@ -289,7 +249,6 @@
   footer.footer-black, footer.footer-black *{color:#EDE6D6;}
   footer.footer-black .logo span{color:var(--teal);}
   footer.footer-black .foot-brand .role{color:var(--teal) !important;}
-  footer.footer-black .foot-brand .foot-line{color:#9C9385;}
   footer.footer-black .foot-stats .n{color:var(--teal);}
   footer.footer-black .foot-stats .l{color:#9C9385;}
   footer.footer-black .foot-col h5{color:#9C9385;}
@@ -333,7 +292,7 @@
       </div>
       <div class="hero-photo reveal">
         <div class="frame">
-          <img src="photo_1.jpeg" alt="Fidélia Sowakoude">
+          <img src="photo_2.jpeg" alt="Fidélia Sowakoude">
         </div>
       </div>
     </div>
@@ -349,7 +308,7 @@
       <div class="about-grid reveal">
         <div class="about-avatar-col">
           <div class="about-avatar">
-          <img src="photo_1.jpeg" alt="Fidélia Sowakoude">
+          <img src="photo_2.jpeg" alt="Fidélia Sowakoude">
           </div>
         </div>
         <div class="about-text">
@@ -433,7 +392,7 @@
           <h3>Mon CV</h3>
           <p>Retrouvez mon parcours académique, mes compétences techniques et mes expériences professionnelles en détail dans mon CV à jour.</p>
         </div>
-        <a href="cv\CVAde Fidélia_Sowakoude.pdf" target="_blank" class="btn btn-primary">Télécharger mon CV ↓</a>
+        <a href="cv/CVAde%20Fid%C3%A9lia_Sowakoude.pdf" target="_blank" class="btn btn-primary">Télécharger mon CV ↓</a>
       </div>
 
     </div>
@@ -447,7 +406,7 @@
       <div class="skills-grid reveal">
         <div class="skill-card">
           <h4>Data Engineering</h4>
-          <div class="skill-tags"><span>ETL/ELT</span><span>Apache Airflow</span><span>Apache Spark</span></div>
+          <div class="skill-tags"><span>ETL/ELT</span><span>Apache Airflow</span><span>Apache Spark</span><span>Dbt</span></div>
         </div>
         <div class="skill-card">
           <h4>Langages</h4>
@@ -459,11 +418,11 @@
         </div>
         <div class="skill-card">
           <h4>Stockage &amp; architectures</h4>
-          <div class="skill-tags"><span>Data Lake/Warehouse</span><span>Airtable</span><span>SQL Server</span><span>MinIO/S3</span></div>
+          <div class="skill-tags"><span>Data Lake/Warehouse</span><span>Airtable</span><span>SQL Server</span><span>MinIO/S3</span><span>Snowflake</span></div>
         </div>
         <div class="skill-card">
           <h4>Cloud &amp; DevOps</h4>
-          <div class="skill-tags"><span>Docker</span><span>Git</span><span>Unix/Linux</span></div>
+          <div class="skill-tags"><span>Docker</span><span>Git</span><span>Unix/Linux</span><span>Streamlit Cloud</span><span>Supabase</span></div>
         </div>
         <div class="skill-card">
           <h4>Data Visualisation</h4>
@@ -500,24 +459,24 @@
           </div>
           <p class="proj-short">Plateforme de matching CV/offres d'emploi par similarité vectorielle, avec pipeline ETL et architecture conteneurisée.</p>
           <div class="proj-details">
-            <!-- <div class="cols2"> -->
               <div>
                 <h5>Ce que j'ai fait</h5>
                 <ul>
-                  <li>Base PostgreSQL/pgvector pour matcher CV et offres par similarité vectorielle</li>
-                  <li>Pipeline ETL (Airflow + MinIO) : ingestion, nettoyage, vectorisation des offres</li>
-                  <li>Frontend Streamlit pour l'interface utilisateur</li>
+                  <li>Conçu un pipeline de données orchestré par Airflow (4 DAGs, exécution quotidienne) : collecte via l'API France Travail, architecture médaillon (MinIO bronze/silver, PostgreSQL gold), extraction de compétences (référentiel de 96 compétences) et vectorisation des offres</li>
+                  <li>Modélisé la base PostgreSQL avec pgvector (index HNSW) pour le matching par similarité cosinus sur plus de 12 000 offres</li>
+                  <li>Développé le moteur de skill-gap : score de correspondance, compétences acquises et manquantes par offre, classement des compétences prioritaires par fréquence sur le marché</li>
+                  <li>Intégré l'IA générative (Mistral + Groq) de façon cadrée : projets pratiques par compétence manquante et assistant conversationnel ancré sur le profil du candidat, sans transmettre le CV brut, complétés par un catalogue de formations vérifiées manuellement</li>
+                  <li>Développé l'interface Streamlit (dépôt de CV, offres, tendances du marché, recommandations, assistant IA) avec authentification sécurisée (bcrypt)</li>
+                  <li>Déployé le frontend sur Streamlit Community Cloud et migré la base vers Supabase</li>
                 </ul>
               </div>
               <div>
                 <h5>Résultat</h5>
                 <ul>
-                  <li>Architecture conteneurisée Docker : backend Python, frontend Streamlit</li>
-                  <li>Matching CV/offres opérationnel de bout en bout</li>
-                  <li>Proposition d'offres d'emploi basée sur la similarité vectorielle</li>
+                  <li>Application opérationnelle de bout en bout et accessible en ligne, du dépôt du CV au plan d'action personnalisé</li>
+                  <li>Stack conteneurisée avec Docker Compose (7 services), pipeline relançable sans doublons</li>
                 </ul>
               </div>
-            <!-- </div> -->
             <div class="proj-stack"><span>PostgreSQL</span><span>pgvector</span><span>Python</span><span>Airflow</span><span>MinIO</span><span>Docker</span><span>Streamlit</span></div>
           </div>
           <button class="toggle-btn" onclick="toggleProject(this)">Voir plus <span class="chev">↓</span></button>
@@ -530,7 +489,6 @@
           </div>
           <p class="proj-short">Collecte de données Reddit et analyse de sentiment NLP sur un corpus de posts textuels.</p>
           <div class="proj-details">
-            <!-- <div class="cols2"> -->
               <div>
                 <h5>Ce que j'ai fait</h5>
                 <ul>
@@ -545,7 +503,6 @@
                   <li>Tendances de sentiment exploitables sur le corpus collecté</li>
                 </ul>
               </div>
-            <!-- </div> -->
             <div class="proj-stack"><span>Python</span><span>Requests</span><span>VADER</span><span>Matplotlib</span></div>
           </div>
           <button class="toggle-btn" onclick="toggleProject(this)">Voir plus <span class="chev">↓</span></button>
@@ -558,7 +515,6 @@
           </div>
           <p class="proj-short">Détection de transactions frauduleuses sur un dataset de 500 000 transactions bancaires.</p>
           <div class="proj-details">
-            <!-- <div class="cols2"> -->
               <div>
                 <h5>Ce que j'ai fait</h5>
                 <ul>
@@ -572,8 +528,7 @@
                   <li>Algorithmes supervisés pour la détection de transactions frauduleuses</li>
                   <li>Modèle entraîné et évalué sur données réelles</li>
                 </ul>
-              <!-- </div> -->
-            </div>
+              </div>
             <div class="proj-stack"><span>Python</span><span>ETL</span><span>ML</span></div>
           </div>
           <button class="toggle-btn" onclick="toggleProject(this)">Voir plus <span class="chev">↓</span></button>
@@ -592,11 +547,11 @@
 
       <div class="contact-grid reveal">
         <div class="contact-card">
-          <div class="photo-round"><img src="photo_1.jpeg" alt="Fidélia Sowakoude"></div>
+          <div class="photo-round"><img src="photo_2.jpeg" alt="Fidélia Sowakoude"></div>
           <h3>Restons en contact</h3>
           <p>Disponible pour discuter de vos projets en ingénierie et architecture de données.</p>
           <div class="contact-item"><span class="lbl">Email</span><a href="mailto:sowakoude24@gmail.com">sowakoude24@gmail.com</a></div>
-          <div class="contact-item"><span class="lbl">Téléphone</span><a href="tel:+33745505959">07 45 50 59 59</a></div>
+          <!-- <div class="contact-item"><span class="lbl">Téléphone</span><a href="tel:+33745505959">07 45 50 59 59</a></div> -->
           <div class="contact-item"><span class="lbl">LinkedIn</span><a href="https://www.linkedin.com/in/fidélia-sowakoude-02904b245" target="_blank">Fidélia Sowakoude</a></div>
           <div class="contact-item"><span class="lbl">GitHub</span><a href="https://github.com/Fidelia-x" target="_blank">@Fidelia-x</a></div>
           <div class="contact-item"><span class="lbl">Localisation</span><span>Île-de-France, France</span></div>
@@ -613,9 +568,9 @@
               <a class="social-icon" href="https://github.com/Fidelia-x" target="_blank" aria-label="GitHub">
                 <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2-.2 4-1 4-4.5a3.5 3.5 0 0 0-1-2.5c.3-1 .3-2 0-3 0 0-.8-.3-2.5 1a9 9 0 0 0-5 0c-1.7-1.3-2.5-1-2.5-1-.3 1-.3 2 0 3a3.5 3.5 0 0 0-1 2.5c0 3.5 2 4.3 4 4.5-.5.5-.5 1-.5 2V21"/></svg>
               </a>
-              <a class="social-icon" href="tel:+33745505959" aria-label="Téléphone">
+              <!-- <a class="social-icon" href="tel:+33745505959" aria-label="Téléphone">
                 <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 17.5c-5 0-9-4-9-9 0-1 .5-2 1.3-2.7l1-1a1 1 0 0 1 1.4.1L11 7.5a1 1 0 0 1-.1 1.4l-.9.7a7 7 0 0 0 3.4 3.4l.7-.9a1 1 0 0 1 1.4-.1l2.6 1.8a1 1 0 0 1 .1 1.4l-1 1c-.7.8-1.7 1.3-2.7 1.3Z"/></svg>
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
@@ -623,12 +578,15 @@
         <div class="form-card">
           <h3>Envoyez-moi un message</h3>
           <p>Remplissez ce formulaire pour envoyer un message et je répondrai le plus rapidement possible.</p>
-          <form id="contactForm" action="https://formsubmit.co/sowakoude24@gmail.com" method="POST">
+          <form id="contactForm" action="https://formsubmit.co/ajax/sowakoude24@gmail.com" method="POST">
             <input type="hidden" name="_captcha" value="false">
-            <div class="field"><label>Nom complet</label><input type="text" id="f-name" name="name" required></div>
-            <div class="field"><label>Email</label><input type="email" id="f-email" name="email" required></div>
-            <div class="field"><label>Sujet</label><input type="text" id="f-subject" name="subject" required></div>
-            <div class="field"><label>Message</label><textarea id="f-message" name="message" required></textarea></div>
+            <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
+            <input type="hidden" name="_template" value="table">
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+            <div class="field"><label for="f-name">Nom complet</label><input type="text" id="f-name" name="name" required></div>
+            <div class="field"><label for="f-email">Email</label><input type="email" id="f-email" name="email" required></div>
+            <div class="field"><label for="f-subject">Sujet</label><input type="text" id="f-subject" name="subject" required></div>
+            <div class="field"><label for="f-message">Message</label><textarea id="f-message" name="message" required></textarea></div>
             <button type="submit" class="submit-btn">Envoyer le message</button>
           </form>
         </div>
@@ -661,7 +619,7 @@
       <div class="foot-col">
         <h5>Contact</h5>
         <a href="mailto:sowakoude24@gmail.com">sowakoude24@gmail.com</a>
-        <a href="tel:+33745505959">07 45 50 59 59</a>
+        <!-- <a href="tel:+33745505959">07 45 50 59 59</a> -->
         <a href="https://www.linkedin.com/in/fidélia-sowakoude-02904b245" target="_blank">LinkedIn</a>
         <a href="https://github.com/Fidelia-x" target="_blank">GitHub</a>
       </div>
